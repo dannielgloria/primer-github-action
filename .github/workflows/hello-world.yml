@@ -1,0 +1,17 @@
+name: Hola mundo cruel Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  di-hola:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Di Hola
+        run: echo "¡Hola, GitHub Actions este es un ejemplo muy sensillo de un hola mundo en git Actions!"
